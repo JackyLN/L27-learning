@@ -13,9 +13,14 @@
     font-family:'Times New Roman', Times, serif;
     color:gray;
 }
-.group 4 {
+.group4 {
     class="container">
     class="row">
     class="col-md-4">
     class="thumbnail">
+}
+.group5 {
+    background-image: url('https://i.pinimg.com/564x/07/4a/72/074a7270132f28eebd89ae0865f00430.jpg'); height: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
