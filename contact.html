@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body{font-family:Verdana, Geneva, Tahoma, sans-serif}
-            *{box-sizing: border-box;}
-            
-            input[type=text], select, textarea{
-                width: 50%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
 
-            input[type-submit] {
-                background-color:rgb(255, 229, 225);
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-        .container {
-            border-radius: 5px;
-            background-color:rgb(255, 229, 225);
-            padding: 20px;
+<head>
+    <link href="mystyle.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
-        </style>
-    </head>
-    <body>
-        <h2>CONTACT FORM</h2>
-        <div class="container">
-            <form action="/action_page.php">
-                <label for="fname">First Name</label><br>
-                    <input type="text" id="fname" name="firstname" placeholder="First Name...">
-                    <br>
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        label {
+            color: #ee2424;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        textarea {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        input[type-submit] {
+            background-color: rgb(255, 229, 225);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 
-                <label for="lname">Last Name</label><br>
-                    <input type="text" id="lname" name="lastname" placeholder="Last Name...">
-                    <br>
+<body>
+    <h2>CONTACT FORM</h2>
+    <div class="contact-container">
+        <form action="/action_page.php">
+            <label id="label-fname" for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="First Name...">
+            <br>
 
-                <label for="email">Email </label><br>
-                    <input type="text" id="email" name="email" placeholder="Email Adress...">
-                    <br>
+            <label id="label-lname" for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name...">
+            <br>
 
-                <label for="birthday">Birthday</label>
-                    <input type="date" id="birthday" name="birthday" style="height:40px;"><br>
+            <label for="email">Email </label><br>
+            <input type="text" id="email" name="email" placeholder="Email Adress...">
+            <br>
 
-                <label for="Gender">Gender</label>
-                    <select id="gender" name="Gender" style="width:150px;">
-                      <option value="Female">Female</option>
-                      <option value="Male">Male</option>
-                      <option value="Unidentified">Unidentified</option>
-                    </select>
-                    <br>
-               
-                <label for="inquiry">Inquiry</label><br>
-                    <textarea id="inquiry" name="inquiry" placeholder="How can we help you?" style="height:200px;"></textarea><br>
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday" style="height:40px;"><br>
 
-                <input type="submit" value="Submit">
+            <label for="Gender">Gender</label>
+            <select id="gender" name="Gender" style="width:150px;">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Unidentified">Unidentified</option>
+            </select>
+            <br>
 
-            </form>
-        </div>
-    </body>
-    </html>
+            <label for="inquiry">Inquiry</label><br>
+            <textarea id="inquiry" name="inquiry" placeholder="How can we help you?" style="height:200px;"></textarea><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <div class="contact-container">
+        <a href="index.html" class="btn btn-info" role="button">Back</a>
+        <button type="button" id="Alertbutton" class="btn btn-primary btn-lg">Alert</button>
+    </div>
+    <script>
+        $(document).ready(function() {
+            // $("#Alertbutton").click(function () {
+            //     alert("muahahaha");
+            // });
+            // $("#label-fname").click(function () {
+            //     $(this).css({ "color": "yellow", "font-size": "200%" });
+            //     alert("First name");
+            // });
+            $("label").hover(function() {
+                $("label").css('color', '#fff200');
+            }, function() {
+                // change to any color that was previously used.
+                $("label").css('color', '#03dbfc');
+            });
+        });
+    </script>
+</body>
+
+</html>
