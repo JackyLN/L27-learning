@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="bmistyle.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1>BMI calculator</h1>
+
+    <form action="none" method="post" name="bmiform">
+        <fieldset>
+            <legend>Height and Weight</legend>
+            <label for="bmiheight">Height</label>
+            <input type="text" name="height"><br>
+            <!-- <textarea id="cm" name="height" placeholder="cm"></textarea><br> -->
+            <label for="bmiweight">Weight</label>
+            <input type="text" name="weight"><br>
+            <!-- <textarea id="kg" name="weight" placeholder="kg"></textarea><br> -->
+            <!-- <button type="button" onclick="calcBMI()" value="calculate">Calculate</button> -->
+            <button onclick="calcBMI()" id="calcBMI">Calculate</button>
+            <button onclick="clear_result()" id="Clear">Clear</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
