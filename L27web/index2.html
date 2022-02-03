@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="mystyle.css" rel="stylesheet" />
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="myscript.js"></script>
+  </head>
+  <body style="background-color: rgb(226, 226, 211)">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7" style="background-color: lavender"></div>
+        <div class="col-md-5" style="background-color: lavenderblush">
+          <div class="container">
+            <button type="button" class="btn btn-primary btn-lg">Basic</button>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="changetoRead();"
+            >
+              Click me to change color
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group2">
+      <h1 id="my_top_h_1" class="group1">L27Studio</h1>
+      <h1 id="my_top_h_2" class="group1">L28Studio</h1>
+      <h1 id="my_top_h_3" class="group1">L29Studio</h1>
+      <p style="text-align: center; color: brown">
+        Hey there! It's Lien here. Welcome to my world!
+      </p>
+    </div>
+    <hr />
+    <h3>New Arrival</h3>
+    <img
+      src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Fashion-illustration_P3a_690x708?$pjpeg$&jpegSize=200&wid=690"
+      alt="fashion"
+      width="200"
+      height="200"
+    />
+    <img
+      src="https://inspgr.id/app/uploads/2020/08/illustration-alex-tang-13.jpg"
+      alt="pic2"
+      width="200"
+      height="200"
+    />
+    <img
+      src="https://lh6.googleusercontent.com/jkpJ1NVTX7V2RA814xUH46cQ_WcInypcRfG6KOwXk6GhbuB5elAhkLxu1EzDMFAzMAAViX1XyaEoI89KQ35Q2Se56QiW7Disq81Az3lBVVCpM8EGHyj6fryqpWpFzZfta_fArc9V"
+      alt="pic3"
+      width="200"
+      height="200"
+    />
+    <img src="L27.Studio 2.png" alt="fashion4" width="200" height="200" />
+    <style>
+      th,
+      td {
+        border: 2px solid green;
+        border-radius: 10px;
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(176, 221, 176);
+      }
+      th,
+      td {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+      }
+    </style>
+    <h2>To do list</h2>
+    <table style="width: 100%">
+      <tr>
+        <th style="width: 50%">Photoshop</th>
+        <td>Mon, Tues</td>
+        <td>SLEEP</td>
+      </tr>
+      <tr>
+        <th>Illustration</th>
+        <td>Sunday</td>
+        <td>SLEEP</td>
+      </tr>
+      <tr>
+        <th>Webdesign</th>
+        <td>Wed, Thurs</td>
+        <td>SLEEP</td>
+      </tr>
+    </table>
+    <h2>My calculator X + Y = ?</h2>
+    <table style="width: 100%">
+      <tr>
+        <th>X</th>
+        <th>Y</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td><input id="calculator_x"/></td>
+        <td><input id="calculator_y" /></td>
+        <td><p id="calculator_result"></p></td>
+      </tr>
+      <tr>
+        <td><button onclick="calculator();">Calculate</button></td>
+        <td><button onclick="clear_result();">Clear</button></td>
+        <td><button onclick="repeat_change_text();">Trigger</button></td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>END</h1>
+    <form>
+        <button type="submit" class="btn btn-primary"> Submit</button>
+    </form>
+    
+  </body>
+</html>

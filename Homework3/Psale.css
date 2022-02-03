@@ -1,0 +1,13 @@
+.title {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.col-md-5 {
+    white-space: nowrap;
+}
+
+.col-md-6 {
+    float: none !important;
+    display: inline-block !important;
+}

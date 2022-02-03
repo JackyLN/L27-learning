@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<script>
+    // Step 1: Get Height
+    // Step 2: Get Weight
+    // Step 3: Calculate weight/square of height  (formula)
+    // Weight / (height * height)
+    // Step 4: Clear
+
+
+    function calcBMI() { //define function
+        //Parse String to Integer parseInt(value)
+        var x = parseInt(document.getElementById("input_height").value); //step 1 //define variable
+        console.log("Start of console");
+        console.log(x);
+        console.log("End of console");
+        var z = parseInt(document.getElementById("input_weight").value); //step 2
+        var result;
+
+        //step3 calculate
+        result = z / (x * x / 10000); //float
+
+        document.getElementById("input_result").innerHTML = result;
+        //document.getElementById("input_result").innerHTML = z / math.pow(x, 2); same as above line without var result
+    }
+
+    function clear_result() {
+        document.getElementById("input_height").value = ""; // text
+        document.getElementById("input_weight").value = "";
+        document.getElementById("input_result").innerHTML = "";
+    }
+
+
+    /* Draft
+
+    x + 1 = 2;
+    x = 1;
+
+    // Truong hop 2
+    x + 1 = y;
+    x = y - 1; // x phu thuoc vao y
+
+    // Truong hop 3
+    x = y; // x phu thuoc vao y
+    // y is user input
+
+    // Math
+    // x = y => y = x
+    // Programming
+    // x = y => y not = x
+
+
+     var test = 166; // number 166
+    var test_text = "166"; // string 166 => text
+    var test_number = parseInt(test_text);
+    '166' => 166
+    //
+    var test = 1;
+    var result = test + 11; // 1 + 11 = 12
+
+    //
+    var test = "1";
+    var result = test + 11; // result = "111" // "1"
+
+
+    var x = "1.234567"; //text "1.234567"
+    var _float = parseFloat(x); // -> _float = 1.234567 // float number 1.234567
+    var _int = parseInt(x); // -> _int = 1
+
+    var _add = x + 1; // -> _add = "1.2345671";
+    var _add_float = _float + 1; // -> _add_float = 2.234567
+    */
+</script>
+
+<head>
+    <link href="bmistyle.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1>BMI calculator</h1>
+
+
+    <fieldset>
+        <legend>Height and Weight</legend>
+        <label for="bmiheight">Height</label>
+        <input type="text" id="input_height" name="height"><br>
+        <!-- <textarea id="cm" name="height" placeholder="cm"></textarea><br> -->
+        <label for="bmiweight">Weight</label>
+        <input type="text" id="input_weight" name="weight"><br>
+        <!-- <textarea id="kg" name="weight" placeholder="kg"></textarea><br> -->
+        <!-- <button type="button" onclick="calcBMI()" value="calculate">Calculate</button> -->
+        <button onclick="calcBMI()" id="calcBMI">Calculate</button>
+        <button onclick="clear_result()" id="Clear">Clear</button>
+    </fieldset>
+
+
+    <h2>Result =</h2>
+    <h2 id="input_result"></h2>
+
+</body>
+
+</html>
