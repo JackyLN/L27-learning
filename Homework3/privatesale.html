@@ -28,20 +28,20 @@
     </h1>
     <br>
     <br>
-    <form>
+    <form action="http://localhost:4000/api/sale" method="post"> 
         <div class="container">
             <div class="col-md-5">
                 <legend class="col-form-label col-sm-2 pt-0"><b>Title</b></legend>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="title" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Mr</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="title" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Mrs</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="title" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">Ms</label>
                 </div>
             </div>
@@ -50,19 +50,19 @@
                 <div class="form-row">
                     <div class="col-md-6">
                         <label for="fname"><b>First Name</b> </label>
-                        <input type="text" class="form-control" id="fname" placeholder="John">
+                        <input type="text" class="form-control" id="fname" name="first" placeholder="John">
 
                     </div>
                     <div class="col-md-6">
                         <label for="lname"><b>Last Name</b></label>
-                        <input type="text" class="form-control" id="lname" placeholder="Doe">
+                        <input type="text" class="form-control" id="lname" name="last" placeholder="Doe">
                     </div>
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="form-group">
                     <label for="inputEmail"><b>Email</b></label>
-                    <input type="text" class="form-control" id="inputEmail" placeholder="abc@gmail.com">
+                    <input type="text" class="form-control" id="inputEmail" name="email" placeholder="abc@gmail.com">
                 </div>
                 <div class="row mb-3">
                     <div class="form-group">
@@ -76,11 +76,11 @@
                     <legend class="col-form-label col-sm-2 pt-0"><b>Interested in</b></legend>
                     <div class="col-sm-10">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="Womenwear" value="option1" checked>
+                            <input class="form-check-input" type="radio" name="interestedin" id="Womenwear" value="option1" checked>
                             <label class="form-check-label" for="Womenwear">Womenwear</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="Menwear" value="option2">
+                            <input class="form-check-input" type="radio" name="interestedin" id="Menwear" value="option2">
                             <label class="form-check-label" for="Menwear">Menwear</label>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                 <div class="form-row">
                     <div class="col-md-6">
                         <label for="shopping"><b>Shopping Section</b></label>
-                        <select id="shopping" class="form-control">
+                        <select id="shopping" class="form-control" name="shoppingsection">
                           <option selected>Choose...</option>
                           <option>Business</option>
                           <option>Silverclass</option>
@@ -104,15 +104,15 @@
                 <legend class="col-form-label"><b>Contact Preference</b></legend>
                 <div class="form-group">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" name="contact_upcoming_event">
                         <label class="form-check-label" for="gridCheck">Upcoming Events</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" name="contact_exclusive_deals">
                         <label class="form-check-label" for="gridCheck">Exclusive Deals</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" name="contact_newsletter">
                         <label class="form-check-label" for="gridCheck">Newsletter</label>
                     </div>
                 </div>
